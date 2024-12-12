@@ -3,7 +3,7 @@
 MASTER_IP="4.251.8.80"
 WORKER1_IP="4.251.8.199"
 WORKER2_IP="4.251.9.88"
-SUFFIX="chabba"
+SUFFIX="linuxtechi"
 
 # Prompt for the node type
 read -p "Enter the node type (e.g., master or worker01/worker02): " NODE_TYPE

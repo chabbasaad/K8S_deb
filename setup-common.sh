@@ -1,12 +1,11 @@
 #!/bin/bash
-# Set predefined IP addresses and suffix
-MASTER_IP="4.251.8.80"
-WORKER1_IP="4.251.8.199"
-WORKER2_IP="4.251.9.88"
-SUFFIX="linuxtechi"
-
-# Prompt for the node type
+# Prompt for IP addresses and suffix
+echo "Please enter the details for the node setup."
+read -p "Enter the master IP (e.g., 192.168.1.23): " MASTER_IP
+read -p "Enter the first worker IP (e.g., 192.168.1.24): " WORKER1_IP
+read -p "Enter the second worker IP (e.g., 192.168.1.25): " WORKER2_IP
 read -p "Enter the node type (e.g., master or worker01/worker02): " NODE_TYPE
+read -p "Enter the suffix (e.g., linuxtechi): " SUFFIX
 
 # Set Hostname
 HOSTNAME="k8s-$NODE_TYPE.$SUFFIX.local"
